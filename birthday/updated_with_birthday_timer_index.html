@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Aanu!</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background: url("./images/background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      h1 {
+        font-size: 6vw;
+        margin-top: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 3vw;
+        color: #fff;
+      }
+
+      .timer {
+        font-size: 4vw;
+        margin: 20px 0;
+      }
+
+      .swiper-container {
+        width: 90%;
+        max-width: 600px;
+        height: 50vh;
+        margin: 20px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .love-letter {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        color: #800379; /* A romantic color */
+        font-family: "Georgia", serif; /* Classic font for love letters */
+        text-align: center;
+      }
+
+      .love-letter h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #1e0229;
+      }
+
+      .love-letter p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        color: #800379;
+      }
+
+      .love-letter .signature {
+        margin-top: 20px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: #800379;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #1e0229;
+      }
+
+      .compliments {
+        margin: 20px auto;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .compliments span {
+        display: block;
+        font-size: 1.3em;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .quiz {
+        margin: 20px auto;
+        width: 90%;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .quiz button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 1em;
+        background-color: #800379;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .quiz button:hover {
+        background-color: #1e0229;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 8vw;
+        }
+
+        p {
+          font-size: 4vw;
+        }
+
+        .swiper-container {
+          width: 100%;
+          height: 40vh;
+        }
+
+        .timer {
+          font-size: 5vw;
+        }
+
+        .button {
+          padding: 12px 25px;
+        }
+
+        .compliments {
+          padding: 10px;
+        }
+
+        .quiz {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 10vw;
+        }
+
+        p {
+          font-size: 5vw;
+        }
+
+        .swiper-container {
+          width: 100%;
+          height: 35vh;
+        }
+
+        .timer {
+          font-size: 6vw;
+        }
+
+        .button {
+          padding: 10px 20px;
+        }
+
+        .quiz button {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday, Aanuoluwapo!</h1>
+    <p>You make every day brighter. Here's to celebrating YOU today!</p>
+
+    <!-- Countdown Timer -->
+    <div class="timer" id="timer"></div>
+
+    <!-- Photo Carousel -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/photo1.jpg" alt="Photo 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo2.jpg" alt="Photo 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo3.jpg" alt="Photo 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo4.jpg" alt="Photo 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo5.jpg" alt="Photo 5" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo6.jpg" alt="Photo 6" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo7.jpg" alt="Photo 7" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo8.jpg" alt="Photo 8" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo9.jpg" alt="Photo 9" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/photo10.jpg" alt="Photo 10" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Love Letter Section -->
+    <div class="love-letter">
+      <h2>My Aanuoluwapo,</h2>
+      <p>
+        On this special day, I want you to know how much you mean to me. Every
+        moment with you is a treasure, and your presence fills my life with joy,
+        love, and purpose. Here's to celebrating the incredible person you are,
+        today and always. I am endlessly grateful for you💖
+      </p>
+      <p class="signature">With all my love, Oyinloluwa</p>
+    </div>
+
+    <!-- Surprise Button -->
+    <div class="compliments">
+      <p>Click the button repeatedly for surprise compliments:</p>
+      <button class="button" onclick="generateCompliment()">
+        💖 Get Compliment
+      </button>
+      <span id="compliment-display"></span>
+    </div>
+
+    <!-- Love Letter Section -->
+    <div class="quiz">
+      <h2>Mini Quiz</h2>
+      <p>Who initiated our first kiss?</p>
+      <button onclick="alert('YOU LIE!')">You</button>
+      <button onclick="alert('Correct! So why have you been denying.')">
+        Me
+      </button>
+      <button onclick="alert('Nice try, but nope!')">We both did it</button>
+
+      <p>How old are you?</p>
+      <button onclick="alert('Correct! My 2003 baby!')">21</button>
+      <button onclick="alert('Have shame na!!!.')">22</button>
+      <button
+        onclick="alert('I hope you do not answer your exam questions like this😒')"
+      >
+        23
+      </button>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop autoplay>
+      <source src="./images/song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <button class="button" onclick="toggleMusic()">🎵 Toggle Music</button>
+
+    <script>
+      // Countdown Timer
+      function updateTimer() {
+        const startTime = new Date("2024-12-02T00:00:00");
+        const endTime = new Date("2024-12-02T23:59:59");
+        const now = new Date();
+        const diff = endTime - now;
+
+        if (now < startTime) {
+          document.getElementById(
+            "timer"
+          ).textContent = `Countdown until your birthday: ${Math.floor(
+            (startTime - now) / (1000 * 60 * 60 * 24)
+          )} day(s)`;
+        } else if (diff <= 0) {
+          document.getElementById("timer").textContent = "Happy Birthday! 🎉";
+        } else {
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+          document.getElementById(
+            "timer"
+          ).textContent = `Time left on your birthday: ${hours}h ${minutes}m ${seconds}s`;
+        }
+      }
+      setInterval(updateTimer, 1000);
+
+      // Compliment Generator
+      const compliments = [
+        "You're the most amazing person I've ever met.",
+        "Your smile lights up my world!",
+        "You're a constant source of joy in my life.",
+        "I love you so much my 2003 baby",
+        "You're beautiful inside and out!",
+      ];
+
+      function generateCompliment() {
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+        const compliment = compliments[randomIndex];
+        document.getElementById("compliment-display").textContent = compliment;
+      }
+
+      // SwiperJS Initialization
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiperScript = document.createElement("script");
+        swiperScript.src = "https://unpkg.com/swiper/swiper-bundle.min.js";
+        document.head.appendChild(swiperScript);
+        swiperScript.onload = () => {
+          new Swiper(".swiper-container", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            autoplay: { delay: 3000, disableOnInteraction: false },
+            effect: "fade",
+            spaceBetween: 30,
+          });
+        };
+      });
+
+      // Music Controls
+      const music = document.getElementById("background-music");
+      function toggleMusic() {
+        if (music.paused) {
+          music.play();
+        } else {
+          music.pause();
+        }
+      }
+    </script>
+  </body>
+</html>
